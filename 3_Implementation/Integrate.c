@@ -72,12 +72,12 @@ while(1)
 	fflush(gval);
 	fprintf(rval,"%d",1);
 	fflush(rval);
-	if(rval)
+	if(rval)             //Checking if red light is glowing 
 	{
 	pval=fopen("/sys/class/gpio/gpio115/value","r");
 	fseek(pval,0,SEEK_SET);
 	fscanf(pval,"%d",&pir_val);
-		if(pir_val)
+		if(pir_val)   //checking vehicle motion detected
 		{
 	          printf("PIR_sensor_value = %d\n",pir_val);
 	          printf("Vehicle detected = %d\n",pir_val);
@@ -95,12 +95,12 @@ while(1)
 	fflush(rval);
 	fprintf(bval,"%d",1);
 	fflush(bval);
-	if(bval)
+	if(bval)        //Checking if blue light is glowing 
 	{
 	pval=fopen("/sys/class/gpio/gpio115/value","r");
 	fseek(pval,0,SEEK_SET);
 	fscanf(pval,"%d",&pir_val);
-		if(pir_val)
+		if(pir_val)  //checking vehicle motion detected
 		{
 		printf("PIR_sensor_value=%d\n",pir_val);
 		printf("Blue Light ON: Please stop!..Get ready\n");
@@ -117,13 +117,13 @@ while(1)
 	fflush(bval);
 	fprintf(gval,"%d",1);
 	fflush(gval);
-	if(gval)
+	if(gval)  //Checking if green light is glowing 
 	{
 	pval=fopen("/sys/class/gpio/gpio115/value","r");
 	fseek(pval,0,SEEK_SET);
 	fscanf(pval,"%d",&pir_val);
 	printf("PIR_sensor_value=%d\n",pir_val);
-	printf("Green Light ON: Keep moving\n");
+	printf("Green Light ON: Keep moving\n"); 
 	sleep(5);
 	}
 fflush(pval);
