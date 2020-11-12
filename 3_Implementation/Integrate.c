@@ -1,3 +1,5 @@
+/* Implentation of userspace code on Angstronm using BBB */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
