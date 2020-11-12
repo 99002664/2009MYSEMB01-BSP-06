@@ -4,6 +4,8 @@ Beagle Bone Black is interfaced with PIR and RGB. In this project if red clour l
 
 ![cppcheck-action](https://github.com/99002664/2009MYSEMB01-BSP-06/workflows/cppcheck-action/badge.svg)
 
+![C/C++ CI](https://github.com/99002664/2009MYSEMB01-BSP-06/workflows/C/C++%20CI/badge.svg?branch=main)
+
  
  
  
